@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Smart Voice Calculator - Android calculator with voice-controlled mathematical calculations.">
+
+    <meta name="author"
+          content="Ajay Kumar">
+
+    <title>Smart Voice Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                Smart<span>Calc</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#technology">Technology</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#download">Download</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <p class="tag">ANDROID APPLICATION</p>
+
+                <h1>
+                    Smart Voice
+                    <span>Calculator</span>
+                </h1>
+
+                <p class="hero-text">
+                    A smart Android calculator that combines
+                    traditional button-based calculations with
+                    hands-free voice-controlled calculations.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#download" class="btn primary-btn">
+                        Download App
+                    </a>
+
+                    <a href="#features" class="btn secondary-btn">
+                        Explore Features
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="calculator-card">
+
+                <div class="calculator-top">
+                    <span>Smart Calculator</span>
+                    <span>●</span>
+                </div>
+
+                <div class="calculator-display">
+                    <small>Answer</small>
+                    <strong id="demoResult">30</strong>
+                </div>
+
+                <div class="calculator-buttons">
+
+                    <button data-value="7">7</button>
+                    <button data-value="8">8</button>
+                    <button data-value="9">9</button>
+                    <button data-value="/">÷</button>
+
+                    <button data-value="4">4</button>
+                    <button data-value="5">5</button>
+                    <button data-value="6">6</button>
+                    <button data-value="*">×</button>
+
+                    <button data-value="1">1</button>
+                    <button data-value="2">2</button>
+                    <button data-value="3">3</button>
+                    <button data-value="-">−</button>
+
+                    <button data-value="0">0</button>
+                    <button data-value=".">.</button>
+                    <button id="clearDemo">C</button>
+                    <button data-value="+">+</button>
+
+                </div>
+
+                <button class="voice-demo" id="voiceDemo">
+                    🎤 Try Voice Calculator
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="section" id="about">
+
+        <div class="section-heading">
+
+            <p class="tag">ABOUT THE PROJECT</p>
+
+            <h2>What is Smart Voice Calculator?</h2>
+
+            <p>
+                Smart Voice Calculator is an Android-based utility
+                application developed using MIT App Inventor.
+                It allows users to perform calculations using both
+                a normal calculator keypad and voice commands.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-card">
+                <div class="icon">🎤</div>
+                <h3>Voice Calculation</h3>
+                <p>
+                    Speak expressions such as
+                    "10 plus 20" and get the calculated result.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="icon">🧮</div>
+                <h3>Normal Calculator</h3>
+                <p>
+                    Perform basic arithmetic calculations
+                    using the on-screen calculator keypad.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="icon">🔊</div>
+                <h3>Voice Answer</h3>
+                <p>
+                    The application can speak the calculated
+                    answer using text-to-speech.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="section alternate" id="features">
+
+        <div class="section-heading">
+
+            <p class="tag">FEATURES</p>
+
+            <h2>Powerful and Simple</h2>
+
+            <p>
+                The application is designed to make calculations
+                easier, faster and more interactive.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+                <span>01</span>
+                <h3>Voice Input</h3>
+                <p>
+                    Enter mathematical expressions through
+                    your voice.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span>02</span>
+                <h3>Arithmetic Operations</h3>
+                <p>
+                    Supports addition, subtraction,
+                    multiplication and division.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span>03</span>
+                <h3>Backspace</h3>
+                <p>
+                    Remove the last entered character
+                    easily.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span>04</span>
+                <h3>Clear Function</h3>
+                <p>
+                    Clear the calculator display
+                    instantly.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span>05</span>
+                <h3>Text-to-Speech</h3>
+                <p>
+                    Listen to the calculated answer
+                    through voice output.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span>06</span>
+                <h3>Calculation History</h3>
+                <p>
+                    Keep track of previous calculations
+                    performed in the application.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- How It Works -->
+    <section class="section" id="working">
+
+        <div class="section-heading">
+
+            <p class="tag">WORKING</p>
+
+            <h2>How It Works</h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Enter Expression</h3>
+                <p>
+                    Type an expression using the keypad
+                    or use voice input.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Process Input</h3>
+                <p>
+                    Voice commands are converted into
+                    mathematical operators.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Calculate</h3>
+                <p>
+                    The application processes the
+                    mathematical expression.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Show & Speak</h3>
+                <p>
+                    The result is displayed and can
+                    also be spoken aloud.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technology -->
+    <section class="section alternate" id="technology">
+
+        <div class="section-heading">
+
+            <p class="tag">TECHNOLOGY</p>
+
+            <h2>Technologies Used</h2>
+
+        </div>
+
+
+        <div class="technology-grid">
+
+            <div class="tech-card">
+                <div class="tech-icon">📱</div>
+                <h3>MIT App Inventor</h3>
+                <p>
+                    Used to design and develop the
+                    Android application.
+                </p>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-icon">🎤</div>
+                <h3>Speech Recognizer</h3>
+                <p>
+                    Converts spoken commands into
+                    text input.
+                </p>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-icon">🔊</div>
+                <h3>Text To Speech</h3>
+                <p>
+                    Converts the calculated result
+                    into spoken output.
+                </p>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-icon">💾</div>
+                <h3>TinyDB</h3>
+                <p>
+                    Used for storing calculation
+                    history locally.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Screenshots -->
+    <section class="section" id="screenshots">
+
+        <div class="section-heading">
+
+            <p class="tag">APP PREVIEW</p>
+
+            <h2>Screenshots</h2>
+
+            <p>
+                Add your actual Smart Voice Calculator
+                screenshots below.
+            </p>
+
+        </div>
+
+
+        <div class="screenshots-grid">
+
+            <div class="screenshot-card">
+
+                <div class="phone-placeholder">
+                    <div class="phone-screen">
+                        <span>📱</span>
+                        <p>App Screenshot 1</p>
+                    </div>
+                </div>
+
+                <h3>Calculator Screen</h3>
+
+            </div>
+
+
+            <div class="screenshot-card">
+
+                <div class="phone-placeholder">
+                    <div class="phone-screen">
+                        <span>🎤</span>
+                        <p>App Screenshot 2</p>
+                    </div>
+                </div>
+
+                <h3>Voice Calculator</h3>
+
+            </div>
+
+
+            <div class="screenshot-card">
+
+                <div class="phone-placeholder">
+                    <div class="phone-screen">
+                        <span>🔊</span>
+                        <p>App Screenshot 3</p>
+                    </div>
+                </div>
+
+                <h3>Voice Answer</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Download -->
+    <section class="download-section" id="download">
+
+        <div class="download-container">
+
+            <p class="tag">GET THE APPLICATION</p>
+
+            <h2>Try Smart Voice Calculator</h2>
+
+            <p>
+                Download the Android application and
+                experience simple voice-powered calculations.
+            </p>
+
+            <div class="download-buttons">
+
+                <!-- Replace apk link later -->
+                <a href="SmartVoiceCalculator.apk"
+                   class="btn primary-btn"
+                   download>
+                    📥 Download APK
+                </a>
+
+                <!-- Replace with your GitHub repository -->
+                <a href="https://github.com/"
+                   class="btn secondary-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    💻 View GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+                <h3>Smart<span>Calc</span></h3>
+
+                <p>
+                    Smart Voice Calculator —
+                    simple, fast and voice-powered.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © <span id="year"></span>
+                Smart Voice Calculator.
+                Developed by Ajay Kumar.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+                  </html>
